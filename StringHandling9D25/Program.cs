@@ -16,6 +16,19 @@
             Console.WriteLine(input.Length);
             int stringLength = input.Length;
             Console.WriteLine(stringLength);
+
+            // character at index of string
+            Console.WriteLine(input[0]);//first character
+            Console.WriteLine(input[input.Length-1]);//last character
+
+            // find index of character
+            Console.WriteLine(input.IndexOf('A')); //outputs index of first A (-1 if not there)
+            Console.WriteLine(input.IndexOf("ell"));
+
+            // substring
+            Console.WriteLine(input.Substring(input.Length-3)); // outputs last 3 characters
+            Console.WriteLine(input.Substring(5,4));//outputs 4 characters starting at index 5
+
         }
     }
 }
